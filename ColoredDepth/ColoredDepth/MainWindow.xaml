@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColoredDepth"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="485.378" Width="1044">
     <Grid>
-        
+        <Label Content="Status: " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10"/>
+        <Label x:Name="LblStatus" Content="*********" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Image x:Name="ScreenColor" HorizontalAlignment="Left" Height="346" Margin="10,28,0,0" VerticalAlignment="Top" Width="559"/>
+        <Image x:Name="ScreenDepth" Height="346" Margin="0,28,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="414"/>
+        <Button x:Name="BtStart" Content="Start" HorizontalAlignment="Left" Margin="10,0,0,10" Width="75" Height="20" VerticalAlignment="Bottom" Click="BtStart_Click"/>
+
     </Grid>
 </Window>
