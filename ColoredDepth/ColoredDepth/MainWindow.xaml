@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColoredDepth"
         mc:Ignorable="d"
-        Title="MainWindow" Height="485.378" Width="1044">
+        Title="MainWindow" Height="485.378" Width="970">
     <Grid>
         <Label Content="Status: " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10"/>
         <Label x:Name="LblStatus" Content="*********" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Top" FontSize="10"/>
         <Image x:Name="ScreenColor" HorizontalAlignment="Left" Height="346" Margin="10,28,0,0" VerticalAlignment="Top" Width="559"/>
         <Image x:Name="ScreenDepth" Height="346" Margin="0,28,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="371"/>
         <Button x:Name="BtStart" Content="Start" HorizontalAlignment="Left" Margin="10,0,0,10" Width="75" Height="20" VerticalAlignment="Bottom" Click="BtStart_Click"/>
+        <Canvas x:Name="Canvas" HorizontalAlignment="Left" Height="346" Margin="11,26,0,0" VerticalAlignment="Top" Width="559">
+            <Rectangle x:Name="Target" HorizontalAlignment="Left" Height="100" Stroke="#FF67F326" VerticalAlignment="Top" Width="100" Canvas.Left="258" Canvas.Top="184"/>
+        </Canvas>
+        <Button x:Name="BtCapture" Content="Start Cap." HorizontalAlignment="Left" Margin="90,0,0,10" Width="75" Height="20" VerticalAlignment="Bottom" Click="BtCapture_Click"/>
 
     </Grid>
 </Window>
